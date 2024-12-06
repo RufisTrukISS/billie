@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">ALEJANDRO</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/sipa.jpg" alt="">
+            </div>
+            <h1>Alejandro Rufino</h1>
+            <h2>Estudiante de Preparatoria</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/?locale=es_LA"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://x.com/login?mx=2"><i class="fa-brands fa-twitter"></i></a>
+                 <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Alejandro Rufino Mejia.</span> Soy estudiante del Plantel Cecytem Chimalhuacan II y estudio la carrera de Animacion Digital. Algunos de los progamas que he manejado de modelado 3D son Blender y Cinema 4D, tambien he trabajado con programas de edicion de fotos como Inskape, Photoshop y Paint y tambien he trabajado con la programacion con programas como Visual Studio y con Sublime Text. Algunos de los proyetos q he trabajado son un Recorrido Virtual del plantel, un corto de 5 minutos sobre una historia fictisia en 3D y un Recorrido Virtual de las piramides de Teotihuacan, etc. </p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            21/12/2007
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            666 66666
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            Joselitomicasita@html.com
+                        </li>
+
+                        <li>
+                            <strong>Dirección</strong>
+                            Estadio Azteca
+                        </li>
+                        
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Aficiones</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                       
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    
+
+ 
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/33.jpg" alt="">
+                    <div class="overlay">
+                        <a href="Mundos/index.html"><h3>Proyectos 3D</h3></a>
+                        <p></p>
+                    </div>
+
+                </div>
+                <div class="proyecto">
+                    <img src="img/22.jpg" alt="">
+                    <div class="overlay">
+                         <a href="Paginas/index.html"><h3>Proyectos Paginas Web</h3></a>
+
+                        
+                    </div>
+                </div>
+                
+             
+             
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input id="nombre" type="text" placeholder="Tú Nombre">
+                    <input id="numero" type="text" placeholder="Número telefónico">
+                    <input id="correo" type="text" placeholder="Dirección de correo">
+                    <input id="tema" type="text" placeholder="Tema">
+                    <textarea id="mensaje" cols="30" rows="5" placeholder="Mensaje"></textarea>
+                    <button id="enviar">Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                 <!-- Mapa -->
+    <div class="col">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3765.528367087445!2d-99.1531026!3d19.3028657!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce005208010919%3A0x9761ee695190b694!2sEstadio%20Azteca!5e0!3m2!1ses-419!2smx!4v1731814196995!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+            </div>
+        </div>
+
+         <div id="datosFormulario" style="display:none; background-color: #252A2E; padding: 15px; margin-top: 20px; border-radius: 5px;">
+
+                <div id="datosFormulario" style="display:none; background-color: #1f1f22; padding: 15px; margin-top: 20px; border-radius: 5px;">
+        <h3>Datos del mensaje enviado:</h3>
+        <div id="resultadoDatos"></div>
+    </div>
+
+        
+
+    <div id="mensajeExito" style="display:none; background-color: #1f1f22; color: green; padding: 15px; margin-top: 20px; border-radius: 5px; text-align: center;">
+        <h3>Tu mensaje ha sido enviado correctamente.</h3>
+    </div>
+    </section>
+
+   
+
+    
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+           <a href="https://www.facebook.com/?locale=es_LA"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://x.com/login?mx=2"><i class="fa-brands fa-twitter"></i></a>
+                 <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
